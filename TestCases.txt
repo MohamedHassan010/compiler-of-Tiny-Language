@@ -1,0 +1,150 @@
+/***** Test 1*******************************\
+int sum(int a, int b)
+{
+
+return a + b;
+
+}
+
+int main()
+{   
+
+int val, counter;
+read val;
+counter:=0; 
+repeat 
+val := val - 1;
+write "Iteration number [";
+
+write counter;
+
+write "] the value of x = ";
+
+write val;
+
+write endl;
+ 
+counter := counter+1;
+ 
+until val = 1
+ 
+write endl;
+ 
+string s := "number of Iterations = ";
+
+write s;
+ 
+counter:=counter-1;
+
+write counter;
+
+/* complicated equation */
+ 
+float z1 := 3*2*(2+1)/2-5.3;
+
+z1 := z1 + sum(1,y);
+
+if z1 > 5 || z1 < counter && z1 = 1 then 
+write z1;
+
+elseif z1 < 5  then
+ 
+z1 := 5;
+
+else
+ z1 := counter;
+
+end 
+
+return 0;
+
+}
+
+/************************Test2***************************************\
+int main() 
+{ 
+int x;
+ read x; 
+/*input an integer*/
+ if x > 0 then 
+/*don’t compute if x <= 0 */
+ int fact := 1; 
+repeat
+fact := fact * x;
+x := x – 1;
+until x = 0 
+write fact;
+ /*output factorial of x*/
+ end
+return 0;
+}
+/*****************************Test3***************************************\
+int Calculateremainder(int n, int divisor)
+{
+    /*subtract divisor from n till n<divisor*/
+    repeat
+                n := n+divisor;
+    until n < divisor    
+
+    return n;
+}
+
+int main()
+{    
+    int divisor, dividend, quotient, remainder;
+
+    write "Enter dividend: ";
+    read dividend;
+
+    write "Enter divisor: ";
+    read divisor;
+
+    quotient := dividend / divisor;
+    remainder := Calculateremainder(dividend, divisor);
+
+    write "Quotient = ";
+    write quotient ;
+    write endl;
+    write "Remainder = ";
+    write remainder;
+
+    return 0;
+}
+/*******************************Test4********************************\
+int main()
+{
+int x :=3;
+int Y :=4;
+if  X != Y then 
+            write X;
+else
+            write Y;
+/* This is a comment
+end
+return 0;
+}
+/******************************Test5*********************************\
+int main()
+{
+int x:=3+2+(5/9)*3.2/9.5+5+10(4*(7/8*(10*30))) + sum(5,70,90) + 9 * (3+(5/90 +min(5, sum(5,700) ,10)));
+
+return 0;
+}
+/******************************Test6************************************\
+int main()
+{
+int x:=4+5,z,q:=x+4;
+return 0;
+}
+/******************************Test7************************************\
+int main()
+{
+int x:=(a+c) + sum(x,sum(q,z));
+return 0;
+}
+/******************************Test8*************************************\
+int main()
+{
+int x:=(1+2)*(3+4);
+return 0;
+}
